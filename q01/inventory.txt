@@ -1,0 +1,3 @@
+25020007067/input/tmp/empty.txt 0
+25020007067/input/docs/notes.one.txt 11
+25020007067/input/docs/secret.txt 7
