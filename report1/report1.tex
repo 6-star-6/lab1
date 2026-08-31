@@ -1,0 +1,203 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{float}
+\usepackage{ctex}
+\usepackage{color}
+\usepackage{graphicx} 
+\begin{document}
+\begin{center}
+  {\huge 第一周实验报告}
+\end{center}
+\begin{enumerate}
+   \item[\LARGE 一] {\LARGE 课堂练习}
+    \begin{itemize}
+      \item[\Large 1]{\Large 问题一 “含空格文件名的批量整理”\\}
+        {\large 实验过程：\\}
+        \begin{figure}[H]
+          \centering
+          \includegraphics[width=0.32\textwidth]{one.png}
+          \includegraphics[width=0.32\textwidth]{two.png}
+          \includegraphics[width=0.32\textwidth]{three.png}
+          \caption{实验过程截图}
+          \label{1}
+        \end{figure}
+       \par\noindent {\large 实验结果：\\}
+        \begin{figure}[h]
+          \centering
+          \includegraphics[width=0.32\textwidth]{four.png}
+          \includegraphics[width=0.32\textwidth]{five.png}
+          \includegraphics[width=0.32\textwidth]{six.png}
+          \caption{实验结果截图}
+          \label{2}
+        \end{figure}
+      \item[\Large 2]{\Large 问题二“随机访问日志统计”\\}
+        {\large 实验过程：}
+        \begin{figure}[H]
+          \centering
+          \includegraphics[width=0.7\textwidth]{Screenshot from 2026-08-30 17-35-14.png}
+          \caption{脚本代码}
+          \label{3}
+          \end{figure}
+          \begin{figure}[H]
+          \centering
+          \includegraphics[width=0.7\textwidth]{Screenshot from 2026-08-30 17-34-49.png}
+          \caption{CSV文件内容}
+          \label{4}
+        \end{figure}
+        \par\noindent {\large 实验结果：}
+        \begin{figure}[H]
+          \centering
+          \includegraphics[width=0.7\textwidth]{Screenshot from 2026-08-30 17-36-09.png}
+          \caption{实验结果截图}
+          \label{5}
+        \end{figure}
+      \item[\Large 3]{\Large 问题三“制造、解决并解释一次合并冲突\\}
+        {\large 实验过程：\\}
+        \begin{figure}[H]
+          \centering
+          \includegraphics[width=0.7\textwidth]{Screenshot from 2026-08-30 18-25-28.png}
+          \caption{初始化仓库+main初始提交}
+          \label{6}
+          \end{figure}
+        \begin{figure}[H]
+          \centering
+          \includegraphics[width=0.7\textwidth]{Screenshot from 2026-08-30 18-25-47.png}
+          \caption{feature-a分支提交}
+          \label{7}
+        \end{figure}
+        \begin{figure}[H]
+          \centering
+          \includegraphics[width=0.7\textwidth]{Screenshot from 2026-08-30 18-27-22.png}
+          \caption{feature-b分支提交}
+          \label{8}
+        \end{figure}
+        \par\noindent {\large 合并冲突报错,执行git merge feature-b,终端输出Automatic merge failed;fix conflicts and then commit the result\\}
+        \par\noindent {\large 原因:feature-a,feature-b在相同文件的同一行有不同修改;解决:保留mode=safe,新增note=reviewed,删除git冲突标记,add后完成合并提交\\}
+        \par\noindent {\large 实验结果:}
+        \begin{figure}[H]
+          \centering
+          \includegraphics[width=0.7\textwidth]{Screenshot from 2026-08-30 18-30-37.png}
+          \caption{config.txt最终内容}
+          \label{9}
+        \end{figure}
+        \begin{figure}[H]
+          \centering
+          \includegraphics[width=0.7\textwidth]{Screenshot from 2026-08-30 18-32-11.png}
+          \caption{图形日志}
+          \label{10}
+        \end{figure}
+      \item[\Large 4]{\Large 问题四“修复并构建一页技术说明”\\}
+        {\large 实验过程：}
+        \begin{figure}[H]
+          \centering
+          \includegraphics[width=0.4\textwidth]{Screenshot from 2026-08-30 21-12-12.png}
+          \caption{report.tex文件内容}
+          \label{11}
+          \end{figure}
+        \begin{figure}[H]
+          \centering
+          \includegraphics[width=0.7\textwidth]{Screenshot from 2026-08-30 21-13-52.png}
+          \caption{指令运行}
+          \label{12}
+        \end{figure}
+        \par\noindent {\large 实验结果:}
+        \begin{figure}[H]
+          \centering
+          \includegraphics[width=0.7\textwidth]{Screenshot from 2026-08-30 21-11-29.png}
+          \caption{PDF文件内容}
+          \label{13}
+        \end{figure}
+      \end{itemize}
+  \item[\LARGE 二] {\LARGE 课后练习}
+      \begin{itemize}
+      \item[\Large 1]{\Large 问题一 ls 的 -l 选项(flag)作用是什么?运行 ls -l / 并观察输出.每一行最前面的 10 个字符分别代表什么?}
+       \par\noindent {\large 作用：显示文件的详细信息，包括权限、所有者、文件大小和修改时间等.}
+       \begin{figure}[H]
+          \centering
+          \includegraphics[width=0.7\textwidth]{Screenshot from 2026-08-30 22-32-48.png}
+          \caption{运行 ls -l / 输出}
+          \label{14}
+          \end{figure}
+      \item[\Large 2]{\Large 问题二 三种引号的区别？写一条命令，输出一个同时包含三种特殊字符的字符串}
+       \par\noindent {\large 区别:单引号保持原样输出,双引号和ANSI引号会进行变量替换和转义}
+       \begin{figure}[H]
+          \centering
+          \includegraphics[width=0.7\textwidth]{Screenshot from 2026-08-30 22-33-03.png}
+          \caption{输出展示}
+          \label{14}
+          \end{figure}
+      \item[\Large 3]{\Large 问题三：写一个脚本，接收文件名参数（$1$），用 \texttt{test -f} 或 \texttt{[ -f ... ]} 检查该文件是否存在，并根据结果输出不同提示。}
+       \begin{figure}[H]
+          \centering
+          \includegraphics[width=0.7\textwidth]{Screenshot from 2026-08-30 22-41-04.png}
+          \caption{脚本代码}
+          \label{15}
+          \end{figure}
+      \item[\Large 4]{\Large 问题四把上一题完成的脚本保存为文件(如 check.sh).先运行 ./check.sh somefile,会发生什么?然后执行 chmod +x check.sh 再试一次.为什么这一步是必须的?}
+       \begin{figure}[H]
+          \centering
+          \includegraphics[width=0.4\textwidth]{Screenshot from 2026-08-30 22-40-42.png}
+          \includegraphics[width=0.4\textwidth]{Screenshot from 2026-08-30 22-41-45.png}
+          \caption{指令运行}
+          \label{16}
+          \end{figure}
+      \item[\Large 5]{\Large 问题五在脚本的 set 选项(flag)里加入 -x 会发生什么?写个简单脚本试试并观察输出.}
+       \begin{figure}[H]
+          \centering
+          \includegraphics[width=0.4\textwidth]{Screenshot from 2026-08-30 22-46-00.png}
+          \includegraphics[width=0.4\textwidth]{Screenshot from 2026-08-30 22-45-36.png}
+          \caption{脚本及输出}
+          \label{16}
+          \end{figure}
+       \item[\Large 6]{\Large 问题六：创建一个新的仓库,创建一个带有几行代码的文件}
+       \begin{figure}[H]
+          \centering
+          \includegraphics[width=0.7\textwidth]{Screenshot from 2026-08-30 23-25-18.png}
+          \caption{创建仓库及文件}
+          \label{17}
+          \end{figure}
+      \item[\Large 7]{\Large 问题七：提交后，创建两个分支}
+       \begin{figure}[H]
+          \centering
+          \includegraphics[width=0.7\textwidth]{Screenshot from 2026-08-30 23-25-28.png}
+          \caption{创建分支}
+          \label{18}
+          \end{figure}
+      \item[\Large 8]{\Large 问题八：在分支中，修改一行}
+       \begin{figure}[H]
+          \centering
+          \includegraphics[width=0.7\textwidth]{Screenshot from 2026-08-30 23-25-46.png}
+          \caption{修改分支内容}
+          \label{19}
+          \end{figure}
+      \item[\Large 8]{\Large 问题九：在分支中，对同一行进行不同修改}
+       \begin{figure}[H]
+          \centering
+          \includegraphics[width=0.7\textwidth]{Screenshot from 2026-08-30 23-25-54.png}
+          \caption{修改分支内容}
+          \label{20}
+          \end{figure}
+      \item[\Large 9]{\Large 问题十：Now switch to and try , then . What happens? Look at the contents of - what do the , , and markers mean?}
+       \begin{figure}[H]
+          \centering
+          \includegraphics[width=0.7\textwidth]{Screenshot from 2026-08-30 23-26-08.png}
+          \caption{提交结果}
+          \label{21}
+          \end{figure}
+      \begin{figure}[H]
+          \centering
+          \includegraphics[width=0.7\textwidth]{Screenshot from 2026-08-30 23-24-42.png}
+          \caption{产生冲突后文件内容}
+          \label{22}
+          \end{figure}
+    \end{itemize}
+  \item[\LARGE 三] {\LARGE GitHub提交}
+    \begin{figure}[H]
+          \centering
+          \includegraphics[width=0.7\textwidth]{Screenshot from 2026-08-31 11-02-14.png}
+          \caption{commit记录截图}
+          \label{23}
+    \end{figure}
+  \par\noindent {\large GitHub提交链接:https://github.com/6-star-6/lab1}  
+    
+\end{enumerate}
+\end{document}
