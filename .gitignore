@@ -3,4 +3,5 @@
 *.out
 *.toc
 *.synctex.gz
-*.pdf
+
+q06/venv/
