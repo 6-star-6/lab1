@@ -9,3 +9,12 @@ q06/venv/
 q07/venv
 q09/test_env/
 q09/dist/
+# python build artifacts
+dist/
+build/
+*.egg-info/
+venv_q12/
+venv/
+source/
+_pycache_/
+*.pyc
