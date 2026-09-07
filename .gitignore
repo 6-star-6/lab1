@@ -3,6 +3,9 @@
 *.out
 *.toc
 *.synctex.gz
-
+test_*/
+venv*/
 q06/venv/
 q07/venv
+q09/test_env/
+q09/dist/
