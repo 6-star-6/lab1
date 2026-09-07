@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "greetlab-q10-25020007067"
+version = "0.1.0"
+[project.scripts]
+sdt-greet = "greetlab.cli:main"
+[tool.ruff]
+line-length = 120
+[tool.ruff.format]
+quote-style = "double"
+[tool.pytest.ini_options]
+testpaths = ["tests"]
